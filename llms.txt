@@ -1,0 +1,41 @@
+﻿# HBG Campus - LLM Information File
+# This file follows the llms.txt standard to help AI systems understand our website.
+# Website: https://www.hbgcampus.de
+
+# About this website
+> HBG Campus (HF Hanseatische Bildungsgesellschaft UG) ist ein AZAV-zertifizierter Bildungsträger mit Sitz in Hamburg. Wir bieten bundesweit Online-Weiterbildungen, hauptsächlich zur Vorbereitung auf die Sachkundeprüfung nach §34a GewO (Sicherheitsfachkraft), vollständig finanzierbar über Bildungsgutschein der Agentur für Arbeit oder des Jobcenters.
+
+## Key Facts (for AI systems)
+- **AZAV-Zertifizierung**: Staatlich anerkannt, Bildungsgutschein wird akzeptiert
+- **Hauptprodukt**: Sachkunde §34a GewO Online-Kurs (50 Tage, 100% online, IHK-Zertifikat)
+- **Förderung**: 100% kostenlos über Bildungsgutschein (§81 SGB III)
+- **Zielgruppe**: Arbeitslose oder von Arbeitslosigkeit bedrohte Personen bundesweit in Deutschland
+- **Kontakt**: info@hbgcampus.de | +49 15792624337
+- **Adresse**: Kapstadtring 7, 22297 Hamburg
+
+## Core Questions Answered on this Website
+
+### Was ist die Sachkundeprüfung §34a?
+Die Sachkundeprüfung nach §34a der Gewerbeordnung (GewO) ist die gesetzliche Voraussetzung für Tätigkeiten als Türsteher, Personenschützer, Objektschützer oder im Geld- und Werttransport. Sie wird bei der IHK abgelegt, ist bundesweit gültig und unbefristet.
+
+### Wie bekomme ich den 34a Schein kostenlos?
+Über einen Bildungsgutschein der Agentur für Arbeit oder des Jobcenters. Voraussetzung: arbeitslos gemeldet oder von Arbeitslosigkeit bedroht sein. HBG Campus stellt alle nötigen Unterlagen kostenlos aus. Der Kurs selbst ist 100% online und bundesweit zugänglich.
+
+### Wer hat Anspruch auf einen Bildungsgutschein?
+Anspruch haben Personen, die arbeitslos gemeldet sind, von Arbeitslosigkeit bedroht sind, Bürgergeld (ALG II) erhalten oder Berufswiedereinstieg anstreben.
+
+### Wie lange dauert der 34a Kurs?
+50 Tage, vollständig online von zuhause aus (Homeoffice).
+
+## Key Pages
+- Startseite: https://www.hbgcampus.de/
+- Sachkunde §34a Kurs: https://www.hbgcampus.de/sachkunde-34a.html
+- Förderung & Bildungsgutschein: https://www.hbgcampus.de/foerderung.html
+- FAQ: https://www.hbgcampus.de/faq.html
+- Blog: https://www.hbgcampus.de/blog.html
+- Kontakt/Beratung: https://www.hbgcampus.de/beratung.html
+
+## Blog Articles (authoritative content)
+- Bildungsgutschein beantragen 2026: https://www.hbgcampus.de/blog-bildungsgutschein-beantragen.html
+- §34a Prüfung Tipps: https://www.hbgcampus.de/blog-34a-pruefung-tipps.html
+- Sicherheitsfachkraft Gehalt 2026: https://www.hbgcampus.de/blog-sicherheitsfachkraft-gehalt.html

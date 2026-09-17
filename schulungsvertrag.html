@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Schulungsvertrag - HBG</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        @page {
+            size: A4;
+            margin: 20mm 20mm 25mm 20mm;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #2D3748;
+            line-height: 1.6;
+            font-size: 11pt;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header / Logo Bereich */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 2px solid #E2E8F0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .logo-placeholder {
+            font-weight: 700;
+            font-size: 24pt;
+            color: #1A365D;
+            letter-spacing: -1px;
+        }
+
+        .logo-subtitle {
+            font-size: 9pt;
+            color: #718096;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .provider-info {
+            text-align: right;
+            font-size: 9.5pt;
+            color: #4A5568;
+        }
+
+        h1 {
+            font-size: 20pt;
+            color: #1A365D;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 11pt;
+            color: #2B6CB0;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #EDF2F7;
+            padding-bottom: 5px;
+            page-break-after: avoid;
+        }
+
+        /* Vertrags-Grid */
+        .contract-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+            background: #F7FAFC;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #E2E8F0;
+        }
+
+        .grid-section h3 {
+            font-size: 10pt;
+            color: #718096;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-group {
+            margin-bottom: 12px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 9pt;
+            color: #718096;
+            font-weight: 600;
+        }
+
+        .form-value {
+            border-bottom: 1px solid #CBD5E0;
+            height: 24px;
+            margin-top: 4px;
+        }
+
+        /* Lehrgangs-Tabelle */
+        .details-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        .details-table th, .details-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        .details-table th {
+            background-color: #1A365D;
+            color: white;
+            font-weight: 600;
+            font-size: 10pt;
+        }
+
+        .details-table td strong {
+            color: #1A365D;
+        }
+
+        /* Listen & Paragraphen */
+        p, li {
+            font-size: 10pt;
+            color: #4A5568;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .bank-details {
+            background: #EDF2F7;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+            font-size: 10pt;
+        }
+
+        /* Unterschriften Bereich */
+        .signature-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 50px;
+            page-break-inside: avoid;
+        }
+
+        .signature-box {
+            text-align: left;
+        }
+
+        .signature-line {
+            border-top: 1px solid #A0AEC0;
+            margin-top: 60px;
+            padding-top: 8px;
+            font-size: 9.5pt;
+            color: #4A5568;
+            font-weight: 600;
+        }
+
+        /* Pagebreak-Optimierungen für sauberen PDF-Druck */
+        .section-block {
+            page-break-inside: avoid;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div>
+            <div class="logo-placeholder">HBG</div>
+            <div class="logo-subtitle">Hanseatische Bildungsgesellschaft</div>
+        </div>
+        <div class="provider-info">
+            <strong>HF Hanseatische Bildungsgesellschaft UG</strong><br>
+            (haftungsbeschränkt)<br>
+            Kapstadtring 7, 22297 Hamburg<br>
+            info@hbgcampus.de | www.hbgcampus.de
+        </div>
+    </div>
+
+    <h1>Exklusiver Schulungsvertrag</h1>
+
+    <div class="contract-grid">
+        <div class="grid-section">
+            <h3>Schulungsanbieter</h3>
+            <p style="margin: 0; line-height: 1.5;">
+                <strong>HF Hanseatische Bildungsgesellschaft UG</strong><br>
+                (haftungsbeschränkt)<br>
+                Kapstadtring 7<br>
+                22297 Hamburg
+            </p>
+        </div>
+        <div class="grid-section">
+            <h3>Teilnehmer/in</h3>
+            <div class="form-group">
+                <label>Name, Vorname</label>
+                <div class="form-value"></div>
+            </div>
+            <div class="form-group">
+                <label>Anschrift</label>
+                <div class="form-value"></div>
+            </div>
+            <div class="form-group">
+                <label>Geburtsdatum</label>
+                <div class="form-value"></div>
+            </div>
+        </div>
+    </div>
+
+    <h2>§ 1 Vertragsgegenstand</h2>
+    <table class="details-table">
+        <thead>
+            <tr>
+                <th style="border-radius: 4px 0 0 4px;">Spezifikation</th>
+                <th style="border-radius: 0 4px 4px 0;">Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Lehrgangs-Nr.</strong></td>
+                <td>SC SK 2506</td>
+            </tr>
+            <tr>
+                <td><strong>Lehrgang</strong></td>
+                <td>Sachkunde gem. §34a GewO (IHK), 80 UE</td>
+            </tr>
+            <tr>
+                <td><strong>Gesamtgebühr</strong></td>
+                <td><strong>1.500,00 €</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="section-block">
+        <h2>§ 2 Gebühren und Fälligkeiten</h2>
+        <p>Für die Teilnahme werden Gebühren erhoben, deren jeweilige Höhe aus § 1 hervorgeht. Die Veranstaltungsgebühr ist vor Beginn des Lehrgangs fällig.</p>
+        <p>Die Veranstaltungsgebühr wird auf folgendes Konto überwiesen:</p>
+        <div class="bank-details">
+            <strong>Kontoinhaber:</strong> HF Hanseatische Bildungsgesellschaft UG (haftungsbeschränkt)<br>
+            <strong>IBAN:</strong> DE51 1001 0123 0429 9767 64<br>
+            <strong>BIC:</strong> QNTODEB2XXX
+        </div>
+    </div>
+
+    <div class="section-block">
+        <h2>§ 3 Erfüllungsort, Gerichtsstand</h2>
+        <p>Erfüllungsort ist der Ort, an dem die Leistung zu erbringen ist, Gerichtsstand der gesetzliche.</p>
+    </div>
+
+    <div class="section-block">
+        <h2>§ 4 Kündigung</h2>
+        <p>Die Kündigung bedarf der Schriftform. Nach Lehrgangsbeginn ist die ordentliche Kündigung ausgeschlossen. Eine Kündigung aus wichtigem Grund ist möglich.</p>
+    </div>
+
+    <div class="section-block">
+        <h2>§ 5 Pflichten des Teilnehmers</h2>
+        <ul>
+            <li>Der Teilnehmer verpflichtet sich, die am Veranstaltungsort geltende Hausordnung und die ausgehändigten Hinweise zur Benutzung der technischen Ausstattung zu beachten.</li>
+            <li>Der Teilnehmer verpflichtet sich, die für die Feststellung der Zugangsvoraussetzungen zur Prüfung erforderlichen Unterlagen rechtzeitig und vollständig vorlegen und die mit diesem Vertrag eingegangenen Verpflichtungen einzuhalten.</li>
+            <li>Der Teilnehmer ist verpflichtet, die Arbeitsschutz- und Unfallverhütungsvorschriften und Regelungen, die Ordnung betreffend, zu beachten.</li>
+            <li>Der Teilnehmer verpflichtet sich, schriftliches Schulungsmaterial, insbesondere Teilnehmerunterlagen nur dann zu anderen als privaten Zwecken zu vervielfältigen, zu verbreiten oder öffentlich wiederzugeben, wenn eine schriftliche Zustimmung der HF Hanseatische Bildungsgesellschaft UG (haftungsbeschränkt) vorliegt.</li>
+        </ul>
+    </div>
+
+    <div class="section-block">
+        <h2>§ 6 Pflichten des Bildungsträgers</h2>
+        <p>Die HF Hanseatische Bildungsgesellschaft UG (haftungsbeschränkt) verpflichtet sich dafür zu sorgen, dass alle Fertigkeiten und Kenntnisse, die zum Erreichen des Lehrgangszieles notwendig sind, in erwachsenengerechter Weise vermittelt werden und nur solche Personen mit der Durchführung der Bildungsmaßnahme zu beauftragen, die nach ihrer Ausbildung und Berufserfahrung dafür qualifiziert sind.</p>
+    </div>
+
+    <div class="section-block">
+        <h2>§ 7 Haftung</h2>
+        <p>Die HF Hanseatische Bildungsgesellschaft UG (haftungsbeschränkt) haftet im Rahmen der Sorgfaltspflicht für die gewissenhafte Veranstaltungsvorbereitung, sorgfältige Auswahl und Überwachung der Dozenten, die Richtigkeit der Leistungsbeschreibung und für ordnungsgemäße Erbringung der Schulungsleistungen.</p>
+        <p>Für Sachschäden haftet die HF Hanseatische Bildungsgesellschaft UG (haftungsbeschränkt) und/oder ihre Mitarbeiter und/oder ihre Erfüllungsgehilfen nur bei Vorsatz und grober Fahrlässigkeit. Sie haftet nicht für etwaige Vermögensschäden des Kunden, die aus einem nicht zustande gekommenen Lehrgang oder aus einem Abbruch eines Lehrgangs resultieren.</p>
+        <p>Eine Haftung für den Verlust oder Diebstahl eingebrachter Sachen oder für die Garderobe des Teilnehmers ist ausgeschlossen.</p>
+    </div>
+
+    <div class="section-block">
+        <h2>§ 8 Sonstiges</h2>
+        <p>Es wird ausdrücklich auf die AGBs der HF Hanseatische Bildungsgesellschaft UG (haftungsbeschränkt) hingewiesen, die hiermit Bestandteil dieses Vertrages werden.</p>
+    </div>
+
+    <div class="section-block">
+        <h2>§ 9 Verzugskosten</h2>
+        <p>Für jede außergerichtliche Mahnung gegenüber dem Kunden kann nach eintretendem Zahlungsverzug ein Betrag von EUR 10,00 zur Abdeckung von Porto- und Verwaltungskosten erhoben werden.</p>
+    </div>
+
+    <div class="section-block">
+        <h2>§ 10 Datenschutzhinweis</h2>
+        <p>Der Kunde erklärt ausdrücklich sein Einverständnis, dass seine Daten im Rahmen der geltenden Datenschutzbestimmungen EDV-gestützt bearbeitet und gespeichert werden.</p>
+    </div>
+
+    <div class="section-block">
+        <h2>§ 11 Nebenabreden</h2>
+        <p>Änderungen oder Ergänzungen des Vertrages bedürfen zu ihrer Wirksamkeit der Schriftform. Sollte eine der Bestimmungen dieser Vertragsbedingungen unwirksam sein, so wird die Wirksamkeit der übrigen Bestimmungen davon nicht berührt. Beide Vertragsparteien werden sich bemühen, in einem solchen Fall eine Lösung zu finden, die dem ursprünglichen Sinn dieser Vertragsbestimmungen nahekommt.</p>
+    </div>
+
+    <div class="signature-container">
+        <div class="signature-box">
+            <div class="signature-line">Unterschrift HF Hanseatische Bildungsgesellschaft UG</div>
+        </div>
+        <div class="signature-box">
+            <div class="signature-line">Unterschrift Teilnehmer/in</div>
+        </div>
+    </div>
+
+</body>
+</html>

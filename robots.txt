@@ -1,0 +1,24 @@
+﻿# Standard crawlers
+User-agent: *
+Allow: /
+
+# Explicitly allow AI/LLM crawlers for GEO (Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://www.hbgcampus.de/sitemap.xml
